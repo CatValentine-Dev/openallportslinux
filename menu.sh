@@ -11,17 +11,17 @@ clear
 
 portuguese(){
     bash <(curl https://raw.githubusercontent.com/CatValentine-Dev/openallportslinux/main/openallportsbrasilian.sh)
-    echo -e "${CYAN}Mudando Linguagem....
+    echo -e "${CYAN}Mudando Linguagem...."
 }
 
 german(){
     bash <(curl https://raw.githubusercontent.com/CatValentine-Dev/openallportslinux/main/openallportsgerman.sh)
-    echo -e "${CYAN}Sprache ändern....
+    echo -e "${CYAN}Sprache ändern...."
 }
 
 english(){
     bash <(curl https://raw.githubusercontent.com/CatValentine-Dev/openallportslinux/main/openallportsenglish.sh)
-    echo -e "${CYAN}Changing to english....
+    echo -e "${CYAN}Changing to english...."
 }
 
     CYAN='\033[0;36m'
