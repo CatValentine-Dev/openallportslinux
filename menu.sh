@@ -25,7 +25,7 @@ english(){
 }
 
     CYAN='\033[0;36m'
-    echo -e "${CYAN}Copyright (c) 2022 TemuxOS"
+    echo -e "${CYAN}Copyright 2022 TemuxOS"
     echo -e "${CYAN}Esse progama e um software livre, você pode modificar e distribuir sem problemas"
     echo -e "${CYAN}Abre todas as Portas do seu Firewall"
     echo -e "${CYAN}Discord: https://discord.gg/WkVVtTaBRh/"
