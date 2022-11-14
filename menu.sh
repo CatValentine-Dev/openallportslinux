@@ -11,7 +11,6 @@ clear
 
 portuguese(){
     bash <(curl https://raw.githubusercontent.com/CatValentine-Dev/openallportslinux/main/openallportsbrasilian.sh)
-    echo -e "${CYAN}Mudando Linguagem...."
 }
 
 german(){
@@ -39,6 +38,7 @@ read -p "Insira um numero: " choice
 if [ $choice == "1" ]
     then
     portuguese
+    echo -e "${CYAN}Mudando Linguagem...."
 fi
 if [ $choice == "2" ]
     then
