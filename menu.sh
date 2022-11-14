@@ -7,20 +7,16 @@ fi
 
 clear
 
-
-
 portuguese(){
     bash <(curl https://raw.githubusercontent.com/CatValentine-Dev/openallportslinux/main/openallportsbrasilian.sh)
 }
 
 german(){
     bash <(curl https://raw.githubusercontent.com/CatValentine-Dev/openallportslinux/main/openallportsgerman.sh)
-    echo -e "${CYAN}Sprache ändern...."
 }
 
 english(){
     bash <(curl https://raw.githubusercontent.com/CatValentine-Dev/openallportslinux/main/openallportsenglish.sh)
-    echo -e "${CYAN}Changing to english...."
 }
 
     CYAN='\033[0;36m'
@@ -37,15 +33,17 @@ english(){
 read -p "Insira um numero: " choice
 if [ $choice == "1" ]
     then
-    portuguese
     echo -e "${CYAN}Mudando Linguagem...."
+    portuguese
 fi
 if [ $choice == "2" ]
     then
+    echo -e "${CYAN}Sprache ändern...."
     german
 fi
 if [ $choice == "3" ]
     then
+    echo -e "${CYAN}Changing to english...."
     english
 fi
 if [ $choice == "4" ]
