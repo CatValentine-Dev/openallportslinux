@@ -25,14 +25,16 @@ english(){
 }
 
     CYAN='\033[0;36m'
-    echo -e "${CYAN}Copyright 2022 TemuxOS"
+    echo -e "${CYAN}Copyright (c) 2022 TemuxOS"
     echo -e "${CYAN}Esse progama e um software livre, você pode modificar e distribuir sem problemas"
-    echo -e "${CYAN}Abre todas as Portas do seu Firewall"
+    echo -e ""
     echo -e "${CYAN}Discord: https://discord.gg/WkVVtTaBRh/"
     echo -e ""
     echo -e "${CYAN}[1] Portuguese"
     echo -e "${CYAN}[2] German"
     echo -e "${CYAN}[3] English"
+    echo -e "${CYAN}[4] Exit"
+    
 read -p "Insira um numero: " choice
 if [ $choice == "1" ]
     then
