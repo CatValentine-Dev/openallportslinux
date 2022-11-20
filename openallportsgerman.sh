@@ -1,14 +1,14 @@
 #!/bin/bash
 
 if (( $EUID != 0 )); then
-    echo -e "${CYAN}Führen Sie dieses Skript mit root aus"
+    echo -e "${CYAN}Bitte führen sie dieses Skript als Root aus!"
     exit
 fi
 
 clear
 
 openallports(){
-    echo -e "${CYAN}Öffnen von Ports in der Firewall..."
+    echo -e "${CYAN}Öffne Ports in der Firewall..."
     sudo iptables-save > ~/iptables-rules
     iptables -P INPUT ACCEPT
     iptables -P OUTPUT ACCEPT
@@ -18,11 +18,11 @@ openallports(){
 
 openallports1(){
     while true; do
-        read -p "Sind Sie sicher, dass Sie die Ports auf Ihrem Computer öffnen möchten? [y/n]? " yn
+        read -p "Sind Sie sicher, dass Sie die Ports öffnen möchten? [y/n]? " yn
         case $yn in
             [Yy]* ) openallports; break;;
             [Nn]* ) exit;;
-            * ) echo "Bitte antworte yes ou no.";;
+            * ) echo "Bitte antworte mit Ja [y] oder Nein [n]";;
         esac
     done
 }
@@ -33,8 +33,8 @@ openallports1(){
     echo -e "${CYAN}Öffnen Sie alle Ports Ihrer Firewall"
     echo -e "${CYAN}Discord: https://discord.gg/WkVVtTaBRh/"
     echo -e ""
-    echo -e "${CYAN}[1] alle Türen öffnen"
-    echo -e "${CYAN}[2] Hinausgehen"
+    echo -e "${CYAN}[1] Ports öffnen"
+    echo -e "${CYAN}[2] Verlassen"
 read -p "geben Sie eine Zahl ein: " choice
 if [ $choice == "1" ]
     then
