@@ -14,6 +14,7 @@ openallports(){
     iptables -P OUTPUT ACCEPT
     iptables -P FORWARD ACCEPT
     iptables -F
+    sudo netfilter-persistent save
 }
 
 openallports1(){
